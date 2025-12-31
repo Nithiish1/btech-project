@@ -1,131 +1,99 @@
-Data-Driven Modeling of Mechanical Properties in Steels
-Project Overview
+# Data-Driven Modeling of Mechanical Properties in Steels
 
-This project develops a data-driven machine learning framework to predict key mechanical properties of steels, specifically Yield Strength (YS) and Ultimate Tensile Strength (UTS), using chemical composition, processing, and microstructural features. The objective is to evaluate the effectiveness of regression models in capturing structure–property relationships and enabling data-assisted materials design.
+## Project Overview
+This project develops a data-driven machine learning framework to predict key mechanical properties of steels, specifically **Yield Strength (YS)** and **Ultimate Tensile Strength (UTS)**, using chemical composition, processing, and microstructural features. The objective is to evaluate the effectiveness of regression models in capturing structure–property relationships and enabling data-assisted materials design.
 
-Objectives
+---
 
-Predict Yield Strength and Ultimate Tensile Strength of steels
+## Objectives
+- Predict Yield Strength and Ultimate Tensile Strength of steels  
+- Analyze the influence of composition, processing, and microstructural features  
+- Compare classical and ensemble regression models  
+- Identify the most reliable predictive model based on accuracy and error consistency  
 
-Analyze the influence of composition, processing, and microstructural features
+---
 
-Compare classical and ensemble regression models
+## Methodology
 
-Identify the most reliable predictive model based on accuracy and error consistency
+### Data Preprocessing
+- Data cleaning and handling of missing values  
+- Feature scaling and normalization  
+- Quantile transformation for non-normal feature distributions  
+- Train–test data splitting  
 
-Methodology
-Data Preprocessing
+### Exploratory Data Analysis
+- Statistical analysis of input features  
+- Correlation analysis to identify influential parameters  
 
-Data cleaning and handling of missing values
+### Feature Engineering
+- Selection of relevant composition, processing, and microstructural features  
+- Removal of redundant or weakly informative variables  
 
-Feature scaling and normalization
-
-Quantile transformation for non-normal feature distributions
-
-Train–test data splitting
-
-Exploratory Data Analysis
-
-Statistical analysis of input features
-
-Correlation analysis to identify influential parameters
-
-Visualization of feature–target relationships
-
-Feature Engineering
-
-Selection of relevant composition, processing, and microstructural features
-
-Removal of redundant or weakly informative variables
-
-Ensuring consistent feature distributions across datasets
-
-Model Development
-
+### Model Development
 The following regression models were implemented and evaluated:
+- Linear Regression  
+- Random Forest Regressor  
+- XGBoost Regressor  
+- LightGBM Regressor  
+- CatBoost Regressor  
 
-Linear Regression
+Hyperparameter tuning and cross-validation were applied to tree-based models.
 
-Random Forest Regressor
-
-XGBoost Regressor
-
-LightGBM Regressor
-
-CatBoost Regressor
-
-Hyperparameter tuning and cross-validation were applied to tree-based models to improve generalization.
-
-Model Evaluation
-
-Model performance was assessed using:
-
-R² Score
-
-Root Mean Squared Error (RMSE)
-
-Mean Absolute Error (MAE)
+### Model Evaluation
+Models were evaluated using:
+- R² Score  
+- Root Mean Squared Error (RMSE)  
+- Mean Absolute Error (MAE)  
 
 The final model was selected based on predictive accuracy, robustness, and error stability.
 
-Results and Insights
+---
 
-Ensemble models significantly outperformed linear regression
+## Results and Insights
+- Ensemble models significantly outperformed linear regression  
+- Tree-based models captured nonlinear structure–property relationships  
+- Composition and processing parameters showed strong influence on mechanical properties  
+- The selected model demonstrated high accuracy and consistent error performance  
 
-Tree-based models effectively captured nonlinear structure–property relationships
+---
 
-Composition and processing parameters showed strong influence on mechanical properties
+---
 
-The selected model demonstrated high accuracy and consistent error performance
+## Applications
+- Accelerated materials design and alloy development  
+- Data-assisted prediction of mechanical properties  
+- Reduction of experimental trial-and-error costs  
+- Decision support for metallurgical research  
 
-Repository Structure
-├── Copy_of_BTP_Final_Part1.ipynb
-├── BTP_final2_prediction.ipynb
-├── README.md
+---
 
-Applications
+## Technologies Used
 
-Accelerated materials design and alloy development
+### Programming Language
+- Python  
 
-Data-assisted prediction of mechanical properties
+### Libraries and Frameworks
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- XGBoost  
+- LightGBM  
+- CatBoost  
 
-Reduction of experimental trial-and-error costs
+### Machine Learning Techniques
+- Regression modeling  
+- Feature engineering  
+- Quantile transformation  
+- Hyperparameter tuning  
+- Cross-validation  
+- Model performance evaluation  
 
-Decision support for metallurgical research
+---
 
-Technologies Used
-Programming Language
+## Author
+**Makkena Nithiish**  
+Dual Degree (B.Tech + M.Tech), IIT Kharagpur  
+Metallurgical and Materials Engineering | Financial Engineering  
 
-Python
-
-Libraries and Frameworks
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-XGBoost
-
-LightGBM
-
-CatBoost
-
-Machine Learning Techniques
-
-Regression modeling
-
-Feature engineering
-
-Quantile transformation
-
-Hyperparameter tuning
-
-Cross-validation
-
-Model performance evaluation
